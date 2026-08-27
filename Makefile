@@ -38,8 +38,7 @@ run GAME:
 	fi
 
 test:
-	cd $(CURDIR)
-	pytest tests/
+	$(VENV_PY) -m pytest tests/
 
 clean:
 	rm -rf env __pycache__ *.pyc

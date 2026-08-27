@@ -7,6 +7,11 @@ The Math SDK is a Python-based engine for defining game rules, simulating outcom
 
 For technical details [view the docs](https://stakeengine.github.io/math-sdk/)
 
+This repository is a downstream copy of
+[`StakeEngine/math-sdk`](https://github.com/StakeEngine/math-sdk). Check the
+upstream project for its current release, contribution policy, and licensing
+terms before redistributing or publishing derived packages.
+
 
 # Installation
  
@@ -20,3 +25,14 @@ make setup
 
 Alternatively, visit our [Setup and Installation page](https://stakeengine.github.io/math-sdk/math_docs/general_overview/) for more details.
 
+The local package is installed from this checkout. `requirements.txt` does not
+install a second copy of the SDK from GitHub, which keeps development and test
+runs tied to the code being edited.
+
+## Tests
+
+After running `make setup`, execute:
+
+```sh
+make test
+```
